@@ -107,23 +107,10 @@ button { cursor: pointer; }
   letter-spacing: .05em;
 }
 
-.connected-state {
-  align-items: center;
-  color: #d3ded7;
-  display: flex;
-  font-size: 11px;
-  gap: 8px;
-  padding: 9px 0 3px;
-}
-
-.connected-state[hidden] { display: none; }
-
-.connected-state span {
-  background: #7fb088;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(127, 176, 136, .14);
-  height: 7px;
-  width: 7px;
+/* Explicitly hide connected state elements */
+.connected-state,
+#connected-state {
+  display: none !important;
 }
 
 .connection-ready .key-field,
@@ -284,9 +271,7 @@ button { cursor: pointer; }
 }
 
 .model-switcher span {
-  color: var(--muted);
-  font-size: 16px;
-  margin-left: 5px;
+  display: none !important;
 }
 
 .topbar-meta,
@@ -311,11 +296,6 @@ button { cursor: pointer; }
   color: var(--muted);
   display: none;
   font-size: 18px;
-}
-
-.meta-dot {
-  background: #7fb088;
-  margin: 0 5px 1px;
 }
 
 /* Hero / welcome */
