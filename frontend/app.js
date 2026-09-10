@@ -9,7 +9,6 @@ const typing = document.querySelector("#typing");
 const mobileMenu = document.querySelector("#mobile-menu");
 const recentConversations = document.querySelector("#recent-conversations");
 const connectionSection = document.querySelector("#connection-section");
-const connectedState = document.querySelector("#connected-state");
 const planner = document.querySelector("#planner");
 const openPlanner = document.querySelector("#open-planner");
 const closePlanner = document.querySelector("#close-planner");
@@ -93,7 +92,6 @@ mobileMenu.addEventListener("click", () => {
 function showConnectedState() {
   if (!apiKeyInput.value.trim()) return;
   connectionSection.classList.add("connection-ready");
-  connectedState.hidden = false;
 }
 
 apiKeyInput.addEventListener("input", showConnectedState);
